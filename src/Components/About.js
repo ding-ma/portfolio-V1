@@ -12,7 +12,7 @@ class About extends Component {
                     </div>
                     <div className="nine columns main-col">
                         <h2>About Me</h2>
-                        <p>I was born in China, but raised in Gatineau (Quebec). I speak English, French, and Mandarin.
+                        <p>I was born in China and raised in Gatineau (Quebec). I speak English, French, and Mandarin.
                             I have an interest in automation, AI, backend development, and data science. My passions are
                             playing violin, building small tools for everyday life, cooking, and gaming.</p>
                         <div className="row">
