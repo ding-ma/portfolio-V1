@@ -15,7 +15,8 @@ class Header extends Component {
                 "className": "fa fa-github"
             }
         ].map(function (network) {
-            return <li key={network.name}><a href={network.url}><i className={network.className}/></a></li>
+            return <li key={network.name}><a href={network.url} target="_blank"><i className={network.className}/></a>
+            </li>
         });
 
         return (

@@ -5,7 +5,7 @@ import ecse223 from "../images/ecse223.png"
 class Portfolio extends Component {
     render() {
 
-        var projects = [
+        const projects = [
             {
                 "title": "AIDE - GUI tool",
                 "category": "Built during my S19 intern",
@@ -20,18 +20,21 @@ class Portfolio extends Component {
             }
         ].map(function (project) {
             return <div key={project.title} className="columns portfolio-item">
-                <div className="item-wrap">
-                    <a href={project.url} title={project.title}>
-                        <img alt={project.title} src={project.image} className="portfolio-image"/>
+                <a href={project.url} target="_blank">
+                    <div className="item-wrap">
+
+                        <img alt={project.title} src={project.image}/>
                         <div className="overlay">
                             <div className="portfolio-item-meta">
                                 <h5>{project.title}</h5>
                                 <p>{project.category}</p>
                             </div>
                         </div>
+
                         <div className="link-icon"><i className="fa fa-link"/></div>
-                    </a>
-                </div>
+
+                    </div>
+                </a>
             </div>
         });
 
