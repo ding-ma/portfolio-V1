@@ -21,7 +21,7 @@ class About extends Component {
                                 <p className="address">
                                     <span>Ding Ma</span><br/>
                                     <span>
-						         Montreal, Quebec
+						         Montréal, Quebéc
                    </span><br/>
                                     <span>438-522-3139</span><br/>
                                     <span>ding.ma@mail.mcgill.ca</span>

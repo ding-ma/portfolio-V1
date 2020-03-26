@@ -6,32 +6,40 @@ class Resume extends Component {
         const works = [
             {
                 "company": "Desjardins",
-                "title": "Solutions Developer",
+                "title": "Solutions Developer Intern",
+                "location": "Montréal, Canada",
                 "years": "May 2020 - August 2020",
-                "description": "Developing an internal crypto currency for employee based on the blockchain technology"
+                "description": "Currently developing an internal crypto currency based on Blockchain."
             },
             {
                 "company": "Environment and Climate Change Canada",
-                "title": "Data Analyst",
+                "title": "Data Analyst Intern",
+                "location": "Montréal, Canada",
                 "years": "May 2019 - August 2019",
-                "description": "Wrote programs and analysed data for meteorologists."
+                "description": "Built data extraction tool and analysed data for meteorologists."
             }
         ].map(function (work) {
+
             return (<div key={work.title}><h3>{work.title}</h3>
-                <p className="info">{work.company}<span>&bull;</span> <em className="date">{work.years}</em></p>
+                <p className="info">{work.company}<br/><em className="date">{work.location}</em><br/>
+                    <em className="date">{work.years}</em></p>
+
                 <p>{work.description}</p>
             </div>)
         });
 
         const skills = [
+            "Python (Pandas, openCV, NumPy, Matplotlib, Selenium)",
             "Git",
-            "Java",
+            "Java (Spring Framework)",
+            "Heroku",
+            "Postgres",
+            "Assembly - ARM",
             "C",
             "Bash",
             "UNIX",
-            "Spring",
             "Cloud Services (GCP)",
-            "React"
+            "JavaScript (React, Puppeteer)"
         ].sort().map(function (skill) {
             return <ul>{skill}</ul>
         });
