@@ -89,9 +89,6 @@ pre {
     word-wrap: break-word;
 }
 
-blockquote, q {
-    quotes: & #8220 & #8220;
-}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -367,7 +364,7 @@ hr {
 a, a:visited {
     text-decoration: none;
     outline: 0;
-    color: #11ABB0;
+    color: white;
 
     -webkit-transition: color .3s ease-in-out;
     -moz-transition: color .3s ease-in-out;
@@ -473,7 +470,7 @@ li p {
 }
 
 .stats-tabs li a:hover {
-    color: #11ABB0;
+    color: #b0a200;
 }
 
 .stats-tabs li a b {
@@ -491,7 +488,7 @@ dl {
 
 dt {
     margin: 0;
-    color: #11ABB0;
+    color: #b0a200;
 }
 
 dd {
@@ -580,7 +577,7 @@ dd {
 
 .pagination .current,
 .pagination .current:hover {
-    background-color: #11ABB0;
+    background-color: #b0a200;
     color: #fff;
 }
 
@@ -611,13 +608,12 @@ img.pull-left {
 /*  6. Buttons  --------------------------------------------------------- */
 
 .button,
-.button:visited,
 button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
     font: 16px/30px 'opensans-bold', sans-serif;
-    background: #11ABB0;
+    background: #b0a200;
     display: inline-block;
     text-decoration: none;
     letter-spacing: 0;
@@ -638,6 +634,7 @@ input[type="button"] {
     -webkit-border-radius: 3px;
     -khtml-border-radius: 3px;
     border-radius: 3px;
+
 }
 
 .button:hover,
