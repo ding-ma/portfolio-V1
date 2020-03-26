@@ -1,9 +1,16 @@
 import React, {Component} from 'react';
 import aide from "../images/AIDE.jpg"
 import ecse223 from "../images/ecse223.png"
+import bird from "../images/McGillBird.jpg"
+import dataVerif from "../images/dataVerif.png"
+import scripts from "../images/scripts.png"
 
 class Portfolio extends Component {
     render() {
+
+        function compare(el1, el2, index) {
+            return el1[index] === el2[index] ? 0 : (el1[index] < el2[index] ? -1 : 1);
+        }
 
         const projects = [
             {
@@ -17,12 +24,33 @@ class Portfolio extends Component {
                 "category": "Class project: model-based programming",
                 "image": ecse223,
                 "url": "https://github.com/ding-ma/ECSE-223-Brick-Breaker"
+            },
+            {
+                "title": "Minerva Auto-Registration",
+                "category": "Registers automatically to classes with Puppeteer and GCP",
+                "image": bird,
+                "url": "https://github.com/ding-ma/mcgill-autoregistration"
+            },
+            {
+                "title": "Miscellaneous Scripts",
+                "category": "Small scripts built during my S19 intern to help my life",
+                "image": scripts,
+                "url": "https://github.com/ding-ma/Weather_Bulleting_Separator"
+            },
+            {
+                "title": "Data Verification",
+                "category": "Script that analyzes weather data and highlights important information",
+                "image": dataVerif,
+                "url": "https://github.com/ding-ma/Data_Verification"
             }
-        ].map(function (project) {
+        ].sort(function (el1, el2) {
+                let compared = compare(el1, el2, "title");
+                return compared === 0 ? -compare(el1, el2, "title") : compared;
+            }
+        ).map(function (project) {
             return <div key={project.title} className="columns portfolio-item">
                 <a href={project.url} target="_blank">
                     <div className="item-wrap">
-
                         <img alt={project.title} src={project.image}/>
                         <div className="overlay">
                             <div className="portfolio-item-meta">
@@ -30,9 +58,6 @@ class Portfolio extends Component {
                                 <p>{project.category}</p>
                             </div>
                         </div>
-
-                        <div className="link-icon"><i className="fa fa-link"/></div>
-
                     </div>
                 </a>
             </div>
