@@ -3,14 +3,20 @@ import React, {Component} from 'react';
 class Header extends Component {
     render() {
 
-        if (this.props.data) {
-            var name = this.props.data.name;
-            var description = this.props.data.description;
-            var state = this.props.data.address.state;
-            var networks = this.props.data.social.map(function (network) {
-                return <li key={network.name}><a href={network.url}><i className={network.className}/></a></li>
-            })
-        }
+        var networks = [
+            {
+                "name": "linkedin",
+                "url": "https://www.linkedin.com/in/ding--ma/",
+                "className": "fa fa-linkedin-square"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/ding-ma",
+                "className": "fa fa-github"
+            }
+        ].map(function (network) {
+            return <li key={network.name}><a href={network.url}><i className={network.className}/></a></li>
+        });
 
         return (
             <header id="home">
@@ -31,8 +37,9 @@ class Header extends Component {
 
                 <div className="row banner">
                     <div className="banner-text">
-                        <h1 className="responsive-headline">Hi, I'm {name}.</h1>
-                        <h3>{description} located in the <i>belle province</i> of {state}.</h3>
+                        <h1 className="responsive-headline">Hi, I'm Ding.</h1>
+                        <h3>I'm currently a software engineering student at the University of McGill located in the <i>belle
+                            province</i> of Quebec.</h3>
                         <hr/>
                         <ul className="social">
                             {networks}
