@@ -1235,3 +1235,7 @@ properly.
 .footer {
     max-height: 80px;
 }
+
+.yellowText {
+    color: #b0a200;
+}
