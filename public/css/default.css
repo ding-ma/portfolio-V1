@@ -1235,3 +1235,6 @@ properly.
     height: auto;
 }
 
+.footer {
+    max-height: 80px;
+}

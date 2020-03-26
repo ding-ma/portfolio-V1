@@ -19,7 +19,7 @@ class Footer extends Component {
         });
 
         return (
-            <footer>
+            <footer className="footer">
 
                 <div className="row">
                     <div className="twelve columns">
