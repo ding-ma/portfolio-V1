@@ -1,0 +1,102 @@
+{
+  "main": {
+    "name": "Ding Ma",
+    "description": "I'm currently a software engineering student at the University of McGill",
+    "image": "profilepic.jpg",
+    "bio": "I was born in China, but raised in Gatineau (Quebec). I speak English, French, and Mandarin. I have an interest in automation, AI, backend development, and data science. My passions are playing violin, building small tools for everyday life, cooking, and gaming.",
+    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+    "email": "ding.ma@mail.mcgill.ca",
+    "phone": "438-522-3139",
+    "address": {
+      "city": "Montreal",
+      "state": "Quebec"
+    },
+    "resumedownload": "https://mcgill-my.sharepoint.com/:b:/g/personal/ding_ma_mail_mcgill_ca/ES82qOpc0I1OkmsnucwAxA0BDsvpo_O5e-qOCzPbdsXtKw?e=akagpW",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/ding--ma/",
+        "className": "fa fa-linkedin-square"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/ding-ma",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "education": [
+      {
+        "school": "McGill University",
+        "degree": "Software Engineering (B.Eng)",
+        "graduated": "September 2018 - Present",
+        "description": [
+          "Involved in McGill Robotics design club.",
+          "Tutoring at CSUS HelpDesk"
+        ]
+      },
+      {
+        "school": "Heritage College",
+        "degree": "General DEC - Science",
+        "graduated": "September 2016 - May 2018",
+        "description": [
+          "Graduated with honors"
+        ]
+      }
+    ],
+    "work": [
+      {
+        "company": "Desjardins",
+        "title": "Solutions Developer",
+        "years": "May 2020 - August 2020",
+        "description": "Developing an internal crypto currency for employee based on the blockchain technology"
+      },
+      {
+        "company": "Environment and Climate Change Canada",
+        "title": "Data Analyst",
+        "years": "May 2019 - August 2019",
+        "description": "Wrote programs and analysed data for meteorologists."
+      }
+    ],
+    "skillmessage": "Here are some technologies that I have worked with",
+    "skills": [
+      "Git",
+      "Java",
+      "C",
+      "Bash",
+      "UNIX",
+      "Spring",
+      "Cloud Services (GCP)",
+      "React"
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "AIDE - GUI tool",
+        "category": "Built during my S19 intern",
+        "image": "AIDE.jpg",
+        "url": "https://github.com/ding-ma/Projet-tude-de-cas-en-Qualit-de-l-air"
+      },
+      {
+        "title": "Brick Breaker",
+        "category": "Class project: model-based programming",
+        "image": "ecse223.png",
+        "url": "https://github.com/ding-ma/ECSE-223-Brick-Breaker"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
+        "user": "Kareem Abdul Jabbar"
+      },
+      {
+        "text": "That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user": "Steve Wozniak... impersonator"
+      }
+    ]
+  }
+}
