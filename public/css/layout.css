@@ -537,7 +537,7 @@ ul#nav li.current a {
     -o-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
 
-    background: url(../images/overlay-bg.png) repeat;
+    background: rgba(58, 56, 54, 0.90);
 }
 
 .portfolio-item .item-wrap .link-icon {
@@ -1222,4 +1222,11 @@ footer .social-links li:first-child {
 
 #go-top a:hover {
     background-color: #0F9095;
+}
+
+#portfolio-image {
+    height: auto;
+    width: auto;
+    max-width: 625px;
+    max-height: 425px;
 }

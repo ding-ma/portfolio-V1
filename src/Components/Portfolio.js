@@ -19,11 +19,10 @@ class Portfolio extends Component {
                 "url": "https://github.com/ding-ma/ECSE-223-Brick-Breaker"
             }
         ].map(function (project) {
-            let projectImage = project.image;
             return <div key={project.title} className="columns portfolio-item">
                 <div className="item-wrap">
                     <a href={project.url} title={project.title}>
-                        <img alt={project.title} src={projectImage}/>
+                        <img alt={project.title} src={project.image} className="portfolio-image"/>
                         <div className="overlay">
                             <div className="portfolio-item-meta">
                                 <h5>{project.title}</h5>
