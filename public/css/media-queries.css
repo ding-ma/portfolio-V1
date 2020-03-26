@@ -137,17 +137,16 @@
         width: 48px;
         height: 48px;
         text-align: left;
-        background-color: #CC5200;
-        position: relative;
+        background-color: #b0a200;
+        position: fixed;
+        transition: top 0.3s; /* Transition effect when sliding down (and up) */
         border: none;
         float: right;
-
         font: 0/0 a;
         text-shadow: none;
         color: transparent;
 
-        position: relative;
-        top: 0px;
+        top: 0;
         right: 30px;
     }
 
@@ -329,42 +328,6 @@
         max-width: 85%;
     }
 
-
-    /* Testimonials Section
-    ----------------------------------------------------------------------- */
-    #testimonials .text-container {
-        text-align: center;
-    }
-
-    #testimonials h1 {
-        font: 16px/24px 'opensans-bold', sans-serif;
-        text-align: center;
-        margin-bottom: 30px;
-        text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-    }
-
-    #testimonials h1 span {
-        display: block;
-    }
-
-    #testimonials .header-col h1:before {
-        content: none;
-    }
-
-    #testimonials blockquote {
-        padding-bottom: 24px;
-    }
-
-    #testimonials blockquote p {
-        font-size: 20px;
-        line-height: 42px;
-    }
-
-    /* Control Nav */
-    .flex-control-nav {
-        text-align: center;
-        margin-left: -30px;
-    }
 
 
     /* contact Section
