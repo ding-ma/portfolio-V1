@@ -4,6 +4,7 @@ import ecse223 from "../images/ecse223.png"
 import bird from "../images/McGillBird.jpg"
 import dataVerif from "../images/dataVerif.png"
 import scripts from "../images/scripts.png"
+import website from "../images/website.jpg"
 
 class Portfolio extends Component {
     render() {
@@ -42,6 +43,12 @@ class Portfolio extends Component {
                 "category": "Script that analyzes weather data and highlights important information",
                 "image": dataVerif,
                 "url": "https://github.com/ding-ma/Data_Verification"
+            },
+            {
+                "title": "This Website",
+                "category": "Built in React.js. Simple. Responsive website.",
+                "image": website,
+                "url": "https://github.com/ding-ma/portfolio"
             }
         ].sort(function (el1, el2) {
                 let compared = compare(el1, el2, "title");

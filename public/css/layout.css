@@ -400,7 +400,7 @@ ul#nav li.current a {
     -o-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
 
-    background: rgba(122, 122, 122, 0.85);
+    background: rgba(122, 122, 122, 0.90);
 }
 
 .portfolio-item .item-wrap .link-icon {
