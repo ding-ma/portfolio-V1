@@ -21,9 +21,10 @@ class Resume extends Component {
         ].map(function (work) {
 
             return (<div key={work.title}><h3>{work.title}</h3>
-                <p className="info">{work.company}<br/><em className="date">{work.location}</em><br/>
-                    <em className="date">{work.years}</em></p>
-
+                <p className="info">{work.company}<span>&bull;</span>
+                    <em className="date">{work.years}</em><br/>
+                    <em className="date">{work.location}</em>
+                </p>
                 <p>{work.description}</p>
             </div>)
         });
@@ -48,6 +49,7 @@ class Resume extends Component {
             "school": "McGill University",
             "degree": "Software Engineering (B.Eng)",
             "graduated": "September 2018 - Present",
+            "location": "Montréal, Québec",
             "description": [
                 "Involved in McGill Robotics design club.",
                 "Tutoring at CSUS HelpDesk"
@@ -57,6 +59,7 @@ class Resume extends Component {
                 "school": "Heritage College",
                 "degree": "General DEC - Science",
                 "graduated": "September 2016 - May 2018",
+                "location": "Gatineau, Québec",
                 "description": [
                     "Graduated with honors"
                 ]
@@ -68,12 +71,16 @@ class Resume extends Component {
                 </div>
             }
 
-            return <div key={education.school}><h3>{education.school}</h3>
-                <p className="info">{education.degree} <span>&bull;</span><em
-                    className="date">{education.graduated}</em></p>
-                {renderList(education.description)}
-                &nbsp;
-            </div>
+            return (
+                <div key={education.school}><h3>{education.school}</h3>
+                    <p className="info">{education.degree}<span>&bull;</span>
+                        <em className="date">{education.graduated}</em><br/>
+                        <em className="date">{education.location}</em>
+                    </p>
+                    {renderList(education.description)}
+                    &nbsp;
+                </div>
+            )
         });
 
         return (
