@@ -7,14 +7,14 @@ class Resume extends Component {
             {
                 "company": "Desjardins",
                 "title": "Solutions Developer Intern",
-                "location": "Montréal, Canada",
+                "location": "Montréal, Québec",
                 "years": "May 2020 - August 2020",
                 "description": "Currently developing an internal crypto currency based on Blockchain."
             },
             {
                 "company": "Environment and Climate Change Canada",
                 "title": "Data Analyst Intern",
-                "location": "Montréal, Canada",
+                "location": "Montréal, Québec",
                 "years": "May 2019 - August 2019",
                 "description": "Built data extraction tool and analysed data for meteorologists."
             }
