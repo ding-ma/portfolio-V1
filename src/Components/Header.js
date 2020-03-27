@@ -46,7 +46,7 @@ class Header extends Component {
                                 showCursor={false}
                                 loop
                             /> Ding<span className="yellowText">.</span></h1>
-
+                        <hr/>
                         <h3>I'm currently a third year software engineering student at McGill University located
                             in the <i>belle province</i> of Québec.</h3>
                         <hr/>

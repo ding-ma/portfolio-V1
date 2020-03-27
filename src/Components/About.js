@@ -53,7 +53,7 @@ class About extends Component {
                                     <button onClick={this.onOpenModal} className="button">Contact Me</button>
                                     <Modal open={open} onClose={this.onCloseModal} showCloseIcon={false}
                                            className="popup">
-                                        <h2>Contact Me</h2>
+                                        <h2>Contact Me - This function is not operational yet!</h2>
                                         <form>
 
                                             <input type="text" name="name" placeholder="Your Name"
@@ -63,7 +63,8 @@ class About extends Component {
                                             <input type="text" name="subject" placeholder="Subject"
                                                    style={inputBox}/>
 
-                                            <textarea name="text" placeholder="Write something" style={{width: 800}}/>
+                                            <textarea name="text" placeholder="Write something..."
+                                                      style={{width: 800}}/>
 
                                             <input type="submit" value="Submit"/>
                                         </form>
