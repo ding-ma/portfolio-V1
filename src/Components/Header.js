@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Typed from 'react-typed';
 
 class Header extends Component {
     render() {
@@ -33,7 +34,19 @@ class Header extends Component {
                 </nav>
                 <div className="row banner">
                     <div className="banner-text">
-                        <h1 className="responsive-headline">Hi there, I'm Ding<span className="yellowText">.</span></h1>
+                        <h1 className="responsive-headline">
+                            <Typed
+                                strings={[
+                                    'Hi',
+                                    'Bonjour',
+                                    '你好'
+                                ]}
+                                typeSpeed={75}
+                                backSpeed={50}
+                                showCursor={false}
+                                loop
+                            />, I'm Ding<span className="yellowText">.</span></h1>
+
                         <h3>I'm currently a third year software engineering student at McGill University located
                             in the <i>belle province</i> of Québec.</h3>
                         <hr/>
