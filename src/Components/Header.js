@@ -4,7 +4,7 @@ import Typed from 'react-typed';
 class Header extends Component {
     render() {
 
-        var networks = [
+        const networks = [
             {
                 "name": "linkedin",
                 "url": "https://www.linkedin.com/in/ding--ma/",
@@ -37,15 +37,15 @@ class Header extends Component {
                         <h1 className="responsive-headline">
                             <Typed
                                 strings={[
-                                    'Hi',
-                                    'Bonjour',
-                                    '你好'
+                                    'Hi, I\'m',
+                                    'Bonjour, je suis',
+                                    '你好, 我是'
                                 ]}
-                                typeSpeed={75}
+                                typeSpeed={80}
                                 backSpeed={50}
                                 showCursor={false}
                                 loop
-                            />, I'm Ding<span className="yellowText">.</span></h1>
+                            /> Ding<span className="yellowText">.</span></h1>
 
                         <h3>I'm currently a third year software engineering student at McGill University located
                             in the <i>belle province</i> of Québec.</h3>

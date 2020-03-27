@@ -18,6 +18,7 @@ class About extends Component {
 
     render() {
         const {open} = this.state;
+        const inputBox = {width: 400, height: 45};
         return (
             <section id="about">
                 <div className="row">
@@ -54,21 +55,17 @@ class About extends Component {
                                            className="popup">
                                         <h2>Contact Me</h2>
                                         <form>
-                                            <label>
-                                                Name:
-                                                <input type="text" name="name"/>
-                                            </label>
-                                            <label>
-                                                Email:
-                                                <input type="text" name="email"/>
-                                            </label>
-                                            Message:
-                                            <textarea>
 
-                                            </textarea>
+                                            <input type="text" name="name" placeholder="Your Name"
+                                                   style={inputBox}/>
+                                            <input type="text" name="email" placeholder="Your Email"
+                                                   style={inputBox}/>
+                                            <input type="text" name="subject" placeholder="Subject"
+                                                   style={inputBox}/>
 
-                                            <input className="button" type="submit" value="Submit"/>
+                                            <textarea name="text" placeholder="Write something" style={{width: 800}}/>
 
+                                            <input type="submit" value="Submit"/>
                                         </form>
                                     </Modal>
                                 </div>

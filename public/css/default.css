@@ -1253,3 +1253,16 @@ properly.
     margin: auto;
 
 }
+
+textarea {
+    resize: none;
+}
+
+input[type=submit] {
+    margin-top: 6px;
+    background: #444;
+}
+
+input[type=submit]:hover {
+    color: #b0a200;
+}
