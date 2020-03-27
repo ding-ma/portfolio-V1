@@ -1,9 +1,23 @@
 import React, {Component} from 'react';
 import profImg from '../images/profilepic.jpg'
+import Modal from "react-responsive-modal";
+
 
 class About extends Component {
-    render() {
+    state = {
+        open: false
+    };
 
+    onOpenModal = () => {
+        this.setState({open: true});
+    };
+
+    onCloseModal = () => {
+        this.setState({open: false});
+    };
+
+    render() {
+        const {open} = this.state;
         return (
             <section id="about">
                 <div className="row">
@@ -32,6 +46,34 @@ class About extends Component {
                                     <a href="https://mcgill-my.sharepoint.com/:b:/g/personal/ding_ma_mail_mcgill_ca/ES82qOpc0I1OkmsnucwAxA0BDsvpo_O5e-qOCzPbdsXtKw?e=akagpW"
                                        className="button" target="_blank" rel="noopener noreferrer">See PDF Resume</a>
                                 </p>
+
+
+                                <div>
+                                    <button onClick={this.onOpenModal} className="button">Contact Me</button>
+                                    <Modal open={open} onClose={this.onCloseModal} showCloseIcon={false}
+                                           className="popup">
+                                        <h2>Contact Me</h2>
+                                        <form>
+                                            <label>
+                                                Name:
+                                                <input type="text" name="name"/>
+                                            </label>
+                                            <label>
+                                                Email:
+                                                <input type="text" name="email"/>
+                                            </label>
+                                            Message:
+                                            <textarea>
+
+                                            </textarea>
+
+                                            <input className="button" type="submit" value="Submit"/>
+
+                                        </form>
+                                    </Modal>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
