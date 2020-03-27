@@ -42,7 +42,7 @@ class Resume extends Component {
             "Cloud Services (GCP)",
             "JavaScript (React, Puppeteer)"
         ].sort().map(function (skill) {
-            return <ul>{skill}</ul>
+            return <ul key={skill}>{skill}</ul>
         });
 
         const education = [{
@@ -65,7 +65,7 @@ class Resume extends Component {
                 ]
             }].map(function (education) {
             function renderList(d) {
-                const items = d.map((a) => <li>{a}</li>);
+                const items = d.map((a) => <li key={a}>{a}</li>);
                 return <div>
                     {items}
                 </div>
