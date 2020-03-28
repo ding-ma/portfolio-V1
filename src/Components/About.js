@@ -2,22 +2,23 @@ import React, {Component} from 'react';
 import profImg from '../images/profilepic.jpg'
 import Modal from "react-responsive-modal";
 
-
 class About extends Component {
+    state = {
+        open: false,
+        emailError: false,
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+    };
+
     constructor(props) {
         super(props);
-        this.state = {
-            open: false,
-            emailError: false,
-            name: '',
-            email: '',
-            subject: '',
-            message: '',
-        };
         this.handleName = this.handleName.bind(this);
         this.handleEmail = this.handleEmail.bind(this);
         this.handleSubject = this.handleSubject.bind(this);
         this.handleMsg = this.handleMsg.bind(this);
+        this.submitForm = this.submitForm.bind(this);
     }
 
     onOpenModal = () => {
@@ -82,7 +83,7 @@ class About extends Component {
                                     <Modal open={open} onClose={this.onCloseModal} showCloseIcon={false}
                                            className="popup">
                                         <h2>Contact Me - This function is not operational yet!</h2>
-                                        <form onSubmit={this.submitForm}>
+                                        <form onSubmit={this.submitForm} autoComplete="off">
 
                                             <input type="text" name="name" placeholder="Your Name"
                                                    style={inputBox} onChange={this.handleName}/>
@@ -110,24 +111,24 @@ class About extends Component {
     }
 
     submitForm(event) {
-        console.log(JSON.stringify({
-            name: this.state.name,
-            email: this.state.email,
-            subject: this.state.subject,
-            msg: this.state.message
-        }));
+        const {name, email, subject, message} = this.state;
         console.log("sending email...");
-        //https://us-central1-pawlace-8c7f0.cloudfunctions.net/contact-me
-        fetch('', {
-            method: 'post',
+        console.log(JSON.stringify({
+            name: name,
+            email: email,
+            subject: subject,
+            msg: message
+        }));
+        fetch('https://us-central1-pawlace-8c7f0.cloudfunctions.net/contact-me', {
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                name: this.state.name,
-                email: this.state.email,
-                subject: this.state.subject,
-                msg: this.state.message
+                name: name,
+                email: email,
+                subject: subject,
+                msg: message
             })
         }).then((response) => {
             if (response.status === 200) {
