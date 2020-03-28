@@ -10,6 +10,7 @@ class Form extends Component {
                     name="form2"
                     acceptCharset="UTF-8"
                     autoComplete="off"
+                    target="_blank"
                     encType="multipart/form-data"
                     method="post"
                     noValidate
@@ -18,7 +19,7 @@ class Form extends Component {
                     <ul>
                         <li className="hide">
                             <input type="hidden" id="idstamp" name="idstamp"
-                                   value=""/>
+                                   value="z`"/>
                         </li>
 
                         <li id="foli4" data-wufoo-field="" data-field-type="text">
@@ -50,13 +51,8 @@ class Form extends Component {
 
                         </li>
                         <li className="buttons ">
-                            <div>
-                                <input id="saveForm" name="saveForm"
-                                       type="submit" value="Submit"
-                                       onClick="window.location.href = 'https://www.google.ca/';"
-                                />
-
-                            </div>
+                            <input id="saveForm" name="saveForm"
+                                   type="submit" value="Submit"/>
                         </li>
 
 
