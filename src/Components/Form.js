@@ -17,43 +17,32 @@ class Form extends Component {
                 >
                     <ul>
                         <li id="foli4" data-wufoo-field="" data-field-type="text">
-                            <label className="desc" id="title4" htmlFor="Field4">
-                            </label>
-                            <div>
-                                <input id="Field4" name="Field4" type="text"
-                                       maxLength="255" tabIndex="0" onKeyUp="" placeholder="Name"/>
-                            </div>
+                            <input id="Field4" name="Field4" type="text"
+                                   maxLength="255" tabIndex="0" onKeyUp="" placeholder="Name"/>
+
                         </li>
-                        <li id="foli2" className="notranslate      ">
-                            <label id="title2" htmlFor="Field2">
-                            </label>
-                            <div>
-                                <input id="Field2" name="Field2" type="email" spellCheck="false"
-                                       maxLength="255" tabIndex="0"
-                                       placeholder="Email"/>
-                            </div>
+                        <li id="foli2" className="notranslate">
+
+
+                            <input id="Field2" name="Field2" type="text" spellCheck="false"
+                                   maxLength="255" tabIndex="0"
+                                   placeholder="Email"/>
+
                         </li>
                         <li id="foli5" data-wufoo-field="" data-field-type="text">
-                            <label className="desc" id="title5" htmlFor="Field5">
-                            </label>
-                            <div>
-                                <input id="Field5" name="Field5" type="text"
-                                       maxLength="255" tabIndex="0" onKeyUp="" placeholder="Subject"/>
-                            </div>
-                        </li>
-                        <li id="foli1"><label className="desc" id="title1" htmlFor="Field1">
 
-                        </label>
-                            <div>
+                            <input id="Field5" name="Field5" type="text"
+                                   maxLength="255" tabIndex="0" onKeyUp="" placeholder="Subject"/>
+                        </li>
+                        <li id="foli1">
                                 <textarea id="Field1"
                                           name="Field1"
                                           spellCheck="true"
                                           rows="10" cols="50"
                                           tabIndex="0"
                                           onKeyUp=""
-                                          placeholder="Message"/>
+                                          placeholder="What would you like to chat about?"/>
 
-                            </div>
                         </li>
                         <li className="buttons ">
                             <div>

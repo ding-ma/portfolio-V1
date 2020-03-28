@@ -1256,6 +1256,7 @@ properly.
 
 textarea {
     resize: none;
+    padding-bottom: 0px;
 }
 
 input[type=submit] {
@@ -1265,4 +1266,10 @@ input[type=submit] {
 
 input[type=submit]:hover {
     color: #b0a200;
+}
+
+input[type=text] {
+    height: 25px;
+    float: left;
+    margin-bottom: 5px;
 }
