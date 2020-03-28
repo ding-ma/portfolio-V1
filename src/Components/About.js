@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
 import profImg from '../images/profilepic.jpg'
 import Modal from "react-responsive-modal";
-import Form from "./Form";
 
 class About extends Component {
     state = {
         open: false
     };
-
 
 
     onOpenModal = () => {
@@ -21,6 +19,64 @@ class About extends Component {
 
     render() {
         const {open} = this.state;
+
+        function renderForm(isOpen) {
+            return (
+                <div id="container">
+                    <form
+                        id="form2"
+                        name="form2"
+                        acceptCharset="UTF-8"
+                        autoComplete="off"
+                        target="_blank"
+                        encType="multipart/form-data"
+                        method="post"
+                        noValidate
+                        action="https://dingma.wufoo.com/forms/ma5u4611pc2t7b/#public"
+                        onSubmit={isOpen}
+                    >
+                        <ul>
+                            <li className="hide">
+                                <input type="hidden" id="idstamp" name="idstamp"
+                                       value="mXve9YwHNaBnKLA9/3TzwVMOQYK+l03anPJsAL+lnUg="/>
+                            </li>
+
+                            <li id="foli4" data-wufoo-field="" data-field-type="text">
+                                <input id="Field4" name="Field4" type="text"
+                                       maxLength="255" tabIndex="0" onKeyUp="" placeholder="Name"/>
+                            </li>
+
+                            <li id="foli2" className="notranslate">
+                                <input id="Field2" name="Field2" type="text" spellCheck="false"
+                                       maxLength="255" tabIndex="0" placeholder="Email"/>
+
+                            </li>
+
+                            <li id="foli5" data-wufoo-field="" data-field-type="text">
+                                <input id="Field5" name="Field5" type="text"
+                                       maxLength="255" tabIndex="0" onKeyUp="" placeholder="Subject"/>
+                            </li>
+
+                            <li id="foli1">
+                                <textarea id="Field1"
+                                          name="Field1"
+                                          spellCheck="true"
+                                          rows="10" cols="50"
+                                          tabIndex="0"
+                                          onKeyUp=""
+                                          placeholder="What would you like to chat about?"/>
+                            </li>
+
+                            <li className="buttons ">
+                                <input id="saveForm" name="saveForm"
+                                       type="submit" value="Submit"/>
+                            </li>
+
+                        </ul>
+                    </form>
+                </div>
+            )
+        }
 
         return (
             <section id="about">
@@ -57,7 +113,7 @@ class About extends Component {
                                     <Modal open={open} onClose={this.onCloseModal} showCloseIcon={false}
                                            className="popup">
                                         <h2>Contact Me</h2>
-                                        <Form/>
+                                        {renderForm(this.onCloseModal)}
                                     </Modal>
                                 </div>
 
@@ -66,7 +122,6 @@ class About extends Component {
                         </div>
                     </div>
                 </div>
-
             </section>
         );
     }
