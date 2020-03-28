@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 class Form extends Component {
     render() {
         return (
-            <div id="container" className="ltr">
+            <div id="container">
 
                 <form
                     id="form2"
@@ -16,6 +16,11 @@ class Form extends Component {
                     action="https://dingma.wufoo.com/forms/ma5u4611pc2t7b/#public"
                 >
                     <ul>
+                        <li className="hide">
+                            <input type="hidden" id="idstamp" name="idstamp"
+                                   value=""/>
+                        </li>
+
                         <li id="foli4" data-wufoo-field="" data-field-type="text">
                             <input id="Field4" name="Field4" type="text"
                                    maxLength="255" tabIndex="0" onKeyUp="" placeholder="Name"/>
@@ -54,10 +59,7 @@ class Form extends Component {
                             </div>
                         </li>
 
-                        <li className="hide">
-                            <input type="hidden" id="idstamp" name="idstamp"
-                                   value=""/>
-                        </li>
+
                     </ul>
                 </form>
 

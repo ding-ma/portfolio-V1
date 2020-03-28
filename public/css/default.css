@@ -679,7 +679,7 @@ input::-moz-focus-inner {
 /*  7. Forms  --------------------------------------------------------- */
 
 form {
-    margin-bottom: 24px;
+    margin-bottom: 0px;
 }
 
 fieldset {
@@ -1251,7 +1251,7 @@ properly.
     right: 0;
     bottom: 0;
     margin: auto;
-
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
 textarea {
