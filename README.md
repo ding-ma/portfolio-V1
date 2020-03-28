@@ -13,7 +13,7 @@ First iteration of [dingma.ca](http://dingma.ca/) built with React.js and hosted
 
 ## Design choices
 * Utilises TravisCI in order to continuously update the website for every push on master.
-* You will see that the email services uses _Wufoo_. This is used to bypass the GitHub pages restriction. 
+* You will see that the email services uses [_Wufoo_](https://www.wufoo.com/). This is used to bypass the GitHub pages restriction. 
 It is essentially a form that gets filled out and sent to me!
 
 ## Licensing
