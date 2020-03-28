@@ -5,22 +5,10 @@ import Form from "./Form";
 
 class About extends Component {
     state = {
-        open: false,
-        emailError: false,
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
+        open: false
     };
 
-    constructor(props) {
-        super(props);
-        this.handleName = this.handleName.bind(this);
-        this.handleEmail = this.handleEmail.bind(this);
-        this.handleSubject = this.handleSubject.bind(this);
-        this.handleMsg = this.handleMsg.bind(this);
-        this.submitForm = this.submitForm.bind(this);
-    }
+
 
     onOpenModal = () => {
         this.setState({open: true});
@@ -30,27 +18,9 @@ class About extends Component {
         this.setState({open: false});
     };
 
-    handleName(event) {
-        this.setState({name: event.target.value});
-    }
-
-    handleEmail(event) {
-        this.setState({email: event.target.value});
-    }
-
-    handleSubject(event) {
-        this.setState({subject: event.target.value});
-    }
-
-    handleMsg(event) {
-        this.setState({message: event.target.value});
-    }
-
 
     render() {
         const {open} = this.state;
-        const inputBox = {width: 400, height: 45};
-
 
         return (
             <section id="about">
@@ -86,24 +56,8 @@ class About extends Component {
                                     <button onClick={this.onOpenModal} className="button">Contact Me</button>
                                     <Modal open={open} onClose={this.onCloseModal} showCloseIcon={false}
                                            className="popup">
-                                        <h2>Contact Me - This function is not operational yet!</h2>
+                                        <h2>Contact Me</h2>
                                         <Form/>
-                                        <form onSubmit={this.submitForm} autoComplete="off">
-
-                                            <input type="text" name="name" placeholder="Your Name"
-                                                   style={inputBox} onChange={this.handleName}/>
-                                            <input type="text" name="email" placeholder="Your Email"
-                                                   style={inputBox} onChange={this.handleEmail}/>
-                                            <input type="text" name="subject" placeholder="Subject"
-                                                   style={inputBox} onChange={this.handleSubject}/>
-
-                                            <textarea name="text" placeholder="Write something..."
-                                                      style={{width: 800}} onChange={this.handleMsg} rows="10" cols="50"
-                                                      tabIndex="0"
-                                                      onKeyUp=""/>
-
-                                            <input type="submit" value="Submit"/>
-                                        </form>
                                     </Modal>
                                 </div>
 
@@ -117,35 +71,6 @@ class About extends Component {
         );
     }
 
-    submitForm(event) {
-        const {name, email, subject, message} = this.state;
-        console.log("sending email...");
-        console.log(JSON.stringify({
-            name: name,
-            email: email,
-            subject: subject,
-            msg: message
-        }));
-        fetch('https://us-central1-pawlace-8c7f0.cloudfunctions.net/contact-me', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                name: name,
-                email: email,
-                subject: subject,
-                msg: message
-            })
-        }).then((response) => {
-            if (response.status === 200) {
-                return response.text();
-            } else {
-                this.setState({emailError: true});
-                return response.text();
-            }
-        })
-    }
 }
 
 export default About;
