@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import profImg from '../images/profilepic.jpg'
 import Modal from "react-responsive-modal";
+import Form from "./Form";
 
 class About extends Component {
     state = {
@@ -45,9 +46,12 @@ class About extends Component {
         this.setState({message: event.target.value});
     }
 
+
     render() {
         const {open} = this.state;
         const inputBox = {width: 400, height: 45};
+
+
         return (
             <section id="about">
                 <div className="row">
@@ -83,6 +87,7 @@ class About extends Component {
                                     <Modal open={open} onClose={this.onCloseModal} showCloseIcon={false}
                                            className="popup">
                                         <h2>Contact Me - This function is not operational yet!</h2>
+                                        <Form/>
                                         <form onSubmit={this.submitForm} autoComplete="off">
 
                                             <input type="text" name="name" placeholder="Your Name"
@@ -93,7 +98,9 @@ class About extends Component {
                                                    style={inputBox} onChange={this.handleSubject}/>
 
                                             <textarea name="text" placeholder="Write something..."
-                                                      style={{width: 800}} onChange={this.handleMsg}/>
+                                                      style={{width: 800}} onChange={this.handleMsg} rows="10" cols="50"
+                                                      tabIndex="0"
+                                                      onKeyUp=""/>
 
                                             <input type="submit" value="Submit"/>
                                         </form>

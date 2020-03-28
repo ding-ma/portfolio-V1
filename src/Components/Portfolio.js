@@ -34,7 +34,7 @@ class Portfolio extends Component {
             },
             {
                 "title": "Miscellaneous Scripts",
-                "category": "Small scripts built during my S19 intern to help my life",
+                "category": "Small form built during my S19 intern to help my life",
                 "image": scripts,
                 "url": "https://github.com/ding-ma/Weather_Bulleting_Separator"
             },
