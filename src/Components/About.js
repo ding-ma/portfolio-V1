@@ -20,7 +20,10 @@ class About extends Component {
     render() {
         const {open} = this.state;
 
-        function renderForm(isOpen) {
+        const {handleNotification} = this.props;
+
+        function renderForm(isOpen, notification) {
+            //mXve9YwHNaBnKLA9/3TzwVMOQYK+l03anPJsAL+lnUg=
             return (
                 <div id="container">
                     <form
@@ -69,7 +72,7 @@ class About extends Component {
 
                             <li className="buttons ">
                                 <input id="saveForm" name="saveForm"
-                                       type="submit" value="Submit"/>
+                                       type="submit" value="Submit" onClick={notification}/>
                             </li>
 
                         </ul>
@@ -79,6 +82,7 @@ class About extends Component {
         }
 
         return (
+
             <section id="about">
                 <div className="row">
                     <div className="three columns">
@@ -106,14 +110,12 @@ class About extends Component {
                                     <a href="https://mcgill-my.sharepoint.com/:b:/g/personal/ding_ma_mail_mcgill_ca/ES82qOpc0I1OkmsnucwAxA0BDsvpo_O5e-qOCzPbdsXtKw?e=akagpW"
                                        className="button" target="_blank" rel="noopener noreferrer">See PDF Resume</a>
                                 </p>
-
-
                                 <div>
                                     <button onClick={this.onOpenModal} className="button">Contact Me</button>
                                     <Modal open={open} onClose={this.onCloseModal} showCloseIcon={false}
                                            className="popup">
                                         <h2>Contact Me</h2>
-                                        {renderForm(this.onCloseModal)}
+                                        {renderForm(this.onCloseModal, handleNotification)}
                                     </Modal>
                                 </div>
 

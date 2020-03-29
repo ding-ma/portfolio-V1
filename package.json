@@ -5,12 +5,13 @@
   "private": true,
   "dependencies": {
     "jquery": "^3.2.1",
-    "react-responsive-modal": "^4.0.1",
-    "react-typed": "^1.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-ga": "^2.3.5",
-    "react-scripts": "1.0.17"
+    "react-responsive-modal": "^4.0.1",
+    "react-scripts": "1.0.17",
+    "react-typed": "^1.2.0",
+    "react-notifications-component": "^2.4.0"
   },
   "scripts": {
     "predeploy": "npm run build",
