@@ -90,9 +90,11 @@ class About extends Component {
                     </div>
                     <div className="nine columns main-col">
                         <h2>About Me</h2>
-                        <p>I was born in China and raised in Gatineau (Quebec). I speak English, French, and Mandarin.
-                            I have an interest in automation, AI, backend development, and data science. My passions are
-                            playing violin, building small tools for everyday life, cooking, and gaming.</p>
+                        <p>I was born in China and raised in Gatineau (Quebec). Growing up, I learned to speak English,
+                            French, and Mandarin.
+                            Currently, my interests are in automation, AI, backend development, and data science.
+                            Outside of school I
+                            play violin, building small tools for everyday life, cook, and gaming.</p>
                         <div className="row">
                             <div className="columns contact-details">
                                 <h2>Contact Details</h2>

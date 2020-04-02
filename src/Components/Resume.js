@@ -6,14 +6,14 @@ class Resume extends Component {
         const works = [
             {
                 "company": "Desjardins",
-                "title": "Solutions Developer Intern",
+                "title": "Incoming Solutions Developer",
                 "location": "Montréal, Québec",
                 "years": "May 2020 - August 2020",
-                "description": "Currently developing an internal crypto currency based on Blockchain."
+                "description": "Will be developing an internal crypto currency based on Blockchain."
             },
             {
                 "company": "Environment and Climate Change Canada",
-                "title": "Data Analyst Intern",
+                "title": "Data Analyst",
                 "location": "Montréal, Québec",
                 "years": "May 2019 - August 2019",
                 "description": "Built data extraction tool and analysed data for meteorologists."
@@ -103,7 +103,7 @@ class Resume extends Component {
                 <div className="row work">
 
                     <div className="three columns header-col">
-                        <h1><span>Work</span></h1>
+                        <h1><span>Internships</span></h1>
                     </div>
 
                     <div className="nine columns main-col">
