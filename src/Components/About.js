@@ -62,12 +62,13 @@ class About extends Component {
 
                             <li id="foli1">
                                 <textarea id="Field1"
+                                          className="textAreaMultiline"
                                           name="Field1"
                                           spellCheck="true"
-                                          rows="10" cols="50"
+                                          rows="10" cols="75"
                                           tabIndex="0"
                                           onKeyUp=""
-                                          placeholder="What would you like to chat about?"/>
+                                          placeholder="What would you like to chat about? Can be anything..."/>
                             </li>
 
                             <li className="buttons ">
@@ -81,6 +82,7 @@ class About extends Component {
             )
         }
 
+
         return (
 
             <section id="about">
@@ -90,11 +92,12 @@ class About extends Component {
                     </div>
                     <div className="nine columns main-col">
                         <h2>About Me</h2>
-                        <p>I was born in China and raised in Gatineau (Quebec). Growing up, I learned to speak English,
-                            French, and Mandarin.
-                            Currently, my interests are in automation, AI, backend development, and data science.
-                            Outside of school I
-                            play violin, building small tools for everyday life, cook, and gaming.</p>
+                        <p align="justify">I was born in China and raised in Gatineau (Québec). Growing up, I learned to
+                            speak English, French, and Mandarin. Currently, my interests are in automation, backend
+                            development, AI/ML, and data science. Outside of school I play violin, cook, and game.
+                            I also have an interest in
+                            <a href="https://www.grailed.com/drycleanonly/an-introduction-to-techwear"
+                               target="_blank"><i> techwear</i></a>.</p>
                         <div className="row">
                             <div className="columns contact-details">
                                 <h2>Contact Details</h2>
