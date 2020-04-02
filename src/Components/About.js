@@ -93,8 +93,9 @@ class About extends Component {
                     <div className="nine columns main-col">
                         <h2>About Me</h2>
                         <p align="justify">I was born in China and raised in Gatineau (Québec). Growing up, I learned to
-                            speak English, French, and Mandarin. Currently, my interests are in automation, backend
-                            development, AI/ML, and data science. Outside of school I play violin, cook, and game.
+                            speak English, French, as well as Mandarin. Currently, my interests are in automation,
+                            backend
+                            development, AI/ML, and data science. Outside of school I play violin, cook, game.
                             I also have an interest in
                             <a href="https://www.grailed.com/drycleanonly/an-introduction-to-techwear"
                                target="_blank" rel="noopener noreferrer"><i> techwear</i></a>.</p>
