@@ -97,7 +97,7 @@ class About extends Component {
                             development, AI/ML, and data science. Outside of school I play violin, cook, and game.
                             I also have an interest in
                             <a href="https://www.grailed.com/drycleanonly/an-introduction-to-techwear"
-                               target="_blank"><i> techwear</i></a>.</p>
+                               target="_blank" rel="noopener noreferrer"><i> techwear</i></a>.</p>
                         <div className="row">
                             <div className="columns contact-details">
                                 <h2>Contact Details</h2>
